@@ -1,44 +1,44 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./views/home";
-import { Demo } from "./views/demo";
-import { Single } from "./views/single";
-import injectContext from "./store/appContext";
 
+ import { Home } from "./views/home";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
-//create your first component
+import { Charactersdetails } from "./views/Charactersdetails";
+
+import { Planetsdetails} from "./views/Planetsdetails";
+import injectContext from "./store/appContext";
+import ScrollToTop from "./component/scrollToTop";
+
+
 const Layout = () => {
-	//the basename is used when your project is published in a subdirectory and not in the root of the domain
-	// you can set the basename on the .env file located at the root of this project, E.g: BASENAME=/react-hello-webapp/
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div>
+		<>
 			<BrowserRouter basename={basename}>
+				<Navbar />
 				<ScrollToTop>
-					<Navbar />
 					<Switch>
-						<Route exact path="/">
+						 <Route exact path="/">
 							<Home />
+						</Route> 
+						<Route exact path="/Charactersdetails/:id">
+							<Charactersdetails />
 						</Route>
-						<Route exact path="/demo">
-							<Demo />
-						</Route>
-						<Route exact path="/single/:theid">
-							<Single />
+						<Route exact path="/Planetsdetails/:id">
+							<Planetsdetails />
 						</Route>
 						<Route>
-							<h1>Not found!</h1>
+							<h1>Not found! c:</h1>
 						</Route>
 					</Switch>
 					<Footer />
-				</ScrollToTop>
+					</ScrollToTop>
 			</BrowserRouter>
-		</div>
+		</>
 	);
 };
 

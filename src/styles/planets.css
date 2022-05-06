@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.botones-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30%;
+}
+
+
+/* .contenedor_planets{
+    margin-top: 80px;
+} */

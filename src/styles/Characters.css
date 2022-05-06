@@ -1,0 +1,16 @@
+
+.cardbuttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20%;
+}
+/* .rotate{transform: rotate(-90deg)}; */
+/* .contenedorr{ */
+
+/* } */
+.conenedor_characters{
+    margin-top: 80px;
+}
+.card-img-top{height: 35vh;}
+
+

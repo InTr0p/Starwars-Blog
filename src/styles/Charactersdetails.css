@@ -1,0 +1,11 @@
+p, h1 {
+    color:white;
+    margin-bottom: 2px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.characterDetails{ border-top: 2px solid black;
+border-bottom: 2px solid black;}

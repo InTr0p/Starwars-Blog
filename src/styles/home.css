@@ -1,0 +1,35 @@
+.wrapper_characters {
+    max-height: 63vh;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+.wrapper_planets {
+    max-height: 63vh;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+.div_text_home {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.mb{padding-bottom: -100rem !important;}
+/* .item{
+   
+    height: 300px;
+    line-height: 200px;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-right: 2px;
+    
+
+  
+} */
