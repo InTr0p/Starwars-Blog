@@ -14,7 +14,7 @@
 $ npm install
 ```
 2. Create a .env file:
-```
+```/workspace/Starwars-Blog/src/video 
 $ cp .env.example .env
 ```
 3. Start coding! and the webpack dev server with live reload, for windows, mac, linux or Gitpod:

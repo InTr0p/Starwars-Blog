@@ -14,7 +14,7 @@ export const getCharacter = async () => {
 };
 export const getCharactersdetail = async id => {
 	try {
-		//Link de api.tech caído o en mantención. No encontré una petición de character details en específico, pero le dejo un readme de como se vería <3
+		//Link de api.tech caído o en mantención. No encontré una petición de character details en específico, pero le dejo un README.md de como se vería en:  /src/como se vería/README.MD con swapi.tech<3
 		return fetch(`https://www.swapi.tech/api/people/${id}`, {
 			method: "GET",
 			redirect: "follow"
@@ -40,7 +40,7 @@ export const getPlanet = async () => {
 	}
 };
 export const getPlanetsdetail = async id => {
-			// Link de api.tech caido o en mantencion. No encontré una petición de planets details en específico, pero le dejo un readme de como se vería <3
+			// Link de api.tech caido o en mantencion. No encontré una petición de planets details en específico, pero le dejo un README.md de como se vería en:  /src/como se vería/README.MD con swapi.tech<3
 	try {
 		return fetch(`https://www.swapi.tech/api/planets/${id}`, {
 			method: "GET",
@@ -52,4 +52,3 @@ export const getPlanetsdetail = async id => {
 		return {};
 	}
 };
-
