@@ -1,8 +1,6 @@
 export const getCharacter = async () => {
 	try {
-		// Link de api.tech caído o en mantención. Como opción B) para revisión dejaré la petición a swapi.dev
-		//"https://www.swapi.tech/api/people?page=1&limit=100"
-		return fetch("https://swapi.dev/api/people/", {
+		return fetch("https://www.swapi.tech/api/people?page=1&limit=100", {
 			method: "GET",
 			redirect: "follow"
 		})
@@ -14,7 +12,6 @@ export const getCharacter = async () => {
 };
 export const getCharactersdetail = async id => {
 	try {
-		//Link de api.tech caído o en mantención. No encontré una petición de character details en específico, pero le dejo un README.md de como se vería en: /src/como se vería/README.MD con swapi.tech<3
 		return fetch(`https://www.swapi.tech/api/people/${id}`, {
 			method: "GET",
 			redirect: "follow"
@@ -27,9 +24,7 @@ export const getCharactersdetail = async id => {
 };
 export const getPlanet = async () => {
 	try {
-		// Link de api.tech caído o en mantenciín. Como opción B) para revisión dejaré la petición a swapi.dev
-		//"https://www.swapi.tech/api/planets?page=1&limit=100"
-		return fetch( "https://swapi.dev/api/planets/", {
+		return fetch( "https://www.swapi.tech/api/planets?page=1&limit=100", {
 			method: "GET",
 			redirect: "follow"
 		})
@@ -40,7 +35,6 @@ export const getPlanet = async () => {
 	}
 };
 export const getPlanetsdetail = async id => {
-			// Link de api.tech caido o en mantencion. No encontré una petición de planets details en específico, pero le dejo un README.md de como se vería en:  /src/como se vería/README.MD con swapi.tech<3
 	try {
 		return fetch(`https://www.swapi.tech/api/planets/${id}`, {
 			method: "GET",
